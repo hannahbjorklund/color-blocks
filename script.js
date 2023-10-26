@@ -32,10 +32,12 @@ function clickYellow(){
     yellowCount.innerHTML = `${Number(yellowCount.innerHTML)+1}`;
 }
 
-// function deleteRed(event){
-//     console.log("Deleting red");
-//     event.target.remove();
-// }
+function deleteRed(event){
+    console.log("Deleting red");
+    event.target.remove();
+    let redCount = document.getElementById("red-count");
+    redCount.innerHTML = `${Number(redCount.innerHTML)-1}`;
+}
 
 // function deleteBlue(event){
 //     console.log("Deleting blue");
