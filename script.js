@@ -39,17 +39,23 @@ function deleteRed(event){
     redCount.innerHTML = `${Number(redCount.innerHTML)-1}`;
 }
 
-// function deleteBlue(event){
-//     console.log("Deleting blue");
-//     event.target.remove();
-// }
+function deleteBlue(event){
+    console.log("Deleting blue");
+    event.target.remove();
+    let blueCount = document.getElementById("blue-count");
+    blueCount.innerHTML = `${Number(blueCount.innerHTML)-1}`;
+}
 
-// function deleteGreen(event){
-//     console.log("Deleting green");
-//     event.target.remove();
-// }
+function deleteGreen(event){
+    console.log("Deleting green");
+    event.target.remove();
+    let greenCount = document.getElementById("green-count");
+    greenCount.innerHTML = `${Number(greenCount.innerHTML)-1}`;
+}
 
-// function deleteYellow(event){
-//     console.log("Deleting yellow");
-//     event.target.remove();
-// }
+function deleteYellow(event){
+    console.log("Deleting yellow");
+    event.target.remove();
+    let yellowCount = document.getElementById("yellow-count");
+    yellowCount.innerHTML = `${Number(yellowCount.innerHTML)-1}`;
+}
