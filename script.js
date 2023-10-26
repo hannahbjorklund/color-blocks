@@ -9,23 +9,27 @@ function clickRed(){
 }
 
 function clickBlue(){
-    
     console.log("You clicked blue");
     let blue = document.getElementById("blocks");
     blue.innerHTML += "<div onclick='deleteBlue(event)' class='block blue-fill'></div>";
-
+    let blueCount = document.getElementById("blue-count");
+    blueCount.innerHTML = `${Number(blueCount.innerHTML)+1}`;
 }
 
 function clickGreen(){
     console.log("You clicked green");
     let green = document.getElementById("blocks");
     green.innerHTML += "<div onclick='deleteGreen(event)' class='block green-fill'></div>";
+    let greenCount = document.getElementById("green-count");
+    greenCount.innerHTML = `${Number(greenCount.innerHTML)+1}`;
 }
 
 function clickYellow(){
     console.log("You clicked yellow");
     let yellow = document.getElementById("blocks");
     yellow.innerHTML += "<div onclick='deleteYellow(event)' class='block yellow-fill'></div>";
+    let yellowCount = document.getElementById("yellow-count");
+    yellowCount.innerHTML = `${Number(yellowCount.innerHTML)+1}`;
 }
 
 // function deleteRed(event){
